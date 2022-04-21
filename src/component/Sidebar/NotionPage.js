@@ -8,7 +8,7 @@ import {
 } from "../../api/document.js";
 import { push } from "../../util/router.js";
 
-export default function NotionPage({ $target, initialState, onClick }) {
+export default function NotionPage({ $target, initialState }) {
   const $page = document.createElement("div");
   const openPage = new Map();
   initialState = this.state;
