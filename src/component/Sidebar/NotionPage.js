@@ -33,6 +33,9 @@ export default function NotionPage({ $target, initialState }) {
         : openPage.delete(id.toString());
       this.setState();
     },
+    onPageClick: (id) => {
+
+    },
     onAdd: async () => {
       const init = { title: "", parent: null };
       const { id } = await createDocument(init);

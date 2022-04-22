@@ -33,7 +33,6 @@ export default function App({ $target }) {
 
   this.route = () => {
     const { pathname } = window.location;
-    console.log(pathname);
     if (pathname === "/") {
       notionPage.setState();
     } else if (pathname.indexOf("/documents/") === 0) {

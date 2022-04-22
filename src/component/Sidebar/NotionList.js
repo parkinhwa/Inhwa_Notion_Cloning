@@ -5,6 +5,7 @@ export default function NotionList({
   $target,
   initialState,
   onToggled,
+  onPageClick,
   onAdd,
   onSubAdd,
   onDelete,
@@ -45,6 +46,10 @@ export default function NotionList({
     const { id } = $li.dataset;
     if (e.target.id === "subpagelist") {
       onToggled(id);
+    } else if (e.target.className === "pagelist") {
+      // $li.classList.add("selected");
+      onPageClick(id);
+      // push(`/documents/${id}`);
     } else if (e.target.id === "subpageadd") {
       onSubAdd(id);
     } else if (e.target.id === "pagedel") {
