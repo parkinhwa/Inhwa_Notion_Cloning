@@ -1,4 +1,4 @@
-import Editor from "./Editor.js";
+import Editor from "../Editor/Editor.js";
 import { setItem, getItem } from "../../util/storage.js";
 import { getDocuments, updateDocument } from "../../api/document.js";
 
@@ -33,7 +33,7 @@ export default function NotionEditPage({
         });
         await updateDocument(document.id, document);
         onNotionList();
-      });
+      }, 1000);
     },
   });
 
@@ -46,12 +46,10 @@ export default function NotionEditPage({
     }
     this.state = nextState;
     this.render();
-    editor.setState(
-      this.state.document || {
-        title: "",
-        content: "",
-      }
-    );
+
+    if (this.state.document) {
+      editor.setState(this.state.document);
+    }
   };
   this.render = () => {
     $target.appendChild($page);

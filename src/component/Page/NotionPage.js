@@ -1,6 +1,5 @@
-import NotionList from "./NotionList.js";
-import NotionListHeader from "./NotionListHeader.js";
-
+import NotionList from "../Sidebar/NotionList.js";
+import NotionListHeader from "../Sidebar/NotionListHeader.js";
 import {
   createDocument,
   deleteDocument,
@@ -28,13 +27,13 @@ export default function NotionPage({ $target, initialState }) {
     $target,
     initialState: [],
     onToggled: async (id) => {
-      !openPage.get(id.toString())
+      !openPage.has(id.toString())
         ? openPage.set(id.toString(), true)
         : openPage.delete(id.toString());
       this.setState();
     },
     onPageClick: (id) => {
-
+      
     },
     onAdd: async () => {
       const init = { title: "", parent: null };
