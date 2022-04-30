@@ -85,7 +85,7 @@ export default function NotionList({
       onToggled(id);
     } else if (e.target.className === "pagelist") {
       // push를 하면 $li이 유지가 안되는군
-      // push(`/documents/${id}`);
+      push(`/documents/${id}`);
       clickli.push($li);
       $li.classList.add("selected");
       if (clickli.length > 1) {
