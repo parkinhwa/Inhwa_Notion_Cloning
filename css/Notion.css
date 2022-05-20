@@ -101,6 +101,7 @@ textarea {
 
 .subpagelist {
   margin-right: 10px;
+  transition-duration: 5s;
 }
 
 .pagelist {

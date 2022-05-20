@@ -10,7 +10,7 @@ export default function App({ $target }) {
   $target.appendChild($notionListContainer);
 
   const $MainpageContainer = document.createElement("div");
-  $MainpageContainer.className = "mainpage"
+  $MainpageContainer.className = "mainpage";
   $target.appendChild($MainpageContainer);
 
   const $EditorContainer = document.createElement("div");
