@@ -10,9 +10,15 @@
     "webpack": "^5.72.1",
     "webpack-dev-server": "^4.9.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "axios": "^0.27.2",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0"
+  },
   "scripts": {
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --mode development"
   },
   "repository": {
     "type": "git",

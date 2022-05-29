@@ -1,15 +1,29 @@
 const path = require("path");
-const webpack = require("webpack");
-const dotenv = require("dotenv").config();
+const HtmlPlugin = require("html-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: "./src/main.js",
   output: {
     path: path.resolve(__dirname, "public"),
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ["css-loader"],
+      },
+    ],
+  },
   plugins: [
-    new webpack.DefinePlugin({
-      "process.env": JSON.stringify(process.env),
-    }),
+    new HtmlPlugin({ template: "./src/index.html" }),
+    new CopyPlugin({
+      patterns: [
+        {from: 'static'}
+      ]
+    })
   ],
+  devServer: {
+    historyApiFallback: true,
+  },
 };
