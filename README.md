@@ -1,7 +1,7 @@
 # Inhwa_Notion_Cloning
-[:point_right: Inhwa Notion 보러가기](https://inhwa-notion-cloning.vercel.app/)
+<!-- [:point_right: Inhwa Notion 보러가기](https://inhwa-notion-cloning.vercel.app/) -->
 
-https://user-images.githubusercontent.com/65644486/165220154-309924ec-273b-4d44-bca5-dda41a401038.mp4
+![](https://velog.velcdn.com/images/parkinhwa/post/09f123a0-f6c7-4e01-ba48-58003e0198ae/image.gif)
 
 ## 컴포넌트 구조
 ![image](https://user-images.githubusercontent.com/65644486/169476759-ca3c7bda-5812-484b-808b-6d4b8f21caa8.png)
