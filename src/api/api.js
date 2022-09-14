@@ -1,4 +1,6 @@
-const { API_END_POINT, API_KEY } = process.env;
+const API_END_POINT="https://kdt-frontend.programmers.co.kr"
+const API_KEY="parkinhwa"
+
 export const request = async (url, options = {}) => {
   try {
     const res = await fetch(`${API_END_POINT}${url}`, {
