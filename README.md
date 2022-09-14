@@ -1,5 +1,5 @@
 # Inhwa_Notion_Cloning
-<!-- [:point_right: Inhwa Notion 보러가기](https://inhwa-notion-cloning.vercel.app/) -->
+[:point_right: Inhwa Notion 보러가기](https://notion-clone-parkinhwa.netlify.app/) 
 
 ![](https://velog.velcdn.com/images/parkinhwa/post/09f123a0-f6c7-4e01-ba48-58003e0198ae/image.gif)
 
